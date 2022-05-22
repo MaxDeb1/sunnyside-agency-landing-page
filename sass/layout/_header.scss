@@ -1,0 +1,40 @@
+header {
+    background: url(images/desktop/image-header.jpg), #3EBFFF;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+    height: 800px;
+    width: 100vw;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        font-family: $Fraunces;
+        font-size: 3.9em;
+        letter-spacing: 0.7rem;
+        color: $White;
+        text-transform: uppercase;
+        margin: 108px 0;
+    }
+
+    img {
+        display:block;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        background: url(images/mobile/image-header.jpg) center no-repeat, #3EBFFF;
+        background-size: contain;
+        height: 538px;
+        width: 100vw;
+
+        h1 {
+            font-size: 2.8em;
+            margin: 90px 0 50px;
+            letter-spacing: 0.5rem;
+            line-height: 2.95rem;
+        }
+    }
+}

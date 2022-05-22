@@ -1,0 +1,217 @@
+.mobile {
+    display: none;
+}
+
+#services {
+    display: grid;
+    grid: auto-flow / 1fr 1fr;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h2,
+    a {
+        font-family: $Fraunces;
+        color: $Dark_blue;
+    }
+
+    .text {
+        vertical-align: middle;
+
+        &.left {
+            margin: auto 15% auto 23%;
+        }
+
+        &.right {
+            margin: auto 23% auto 15.5%;
+        }
+
+        h2 {
+            font-size: 2.9em;
+            line-height: 1.2em;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.9rem;
+            letter-spacing: 0.01rem;
+            color: $Grayish_blue2;
+            padding-bottom: 1.5rem;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.09rem;
+        }
+
+        .underline::after {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 5px;
+            bottom: -3px;
+            border-radius: 50px;
+            margin: 0 auto;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: -1;
+            border-bottom: 9px solid;
+        }
+
+        .underline.yellow::after {
+            border-bottom: 9px solid $Yellow_underline;
+           /* filter: brightness(120%) saturate(120%); */
+        }
+
+        .underline.yellow:hover::after {
+            border-bottom: 9px solid $Yellow;
+        }
+
+        .underline.pink::after {
+            border-bottom: 9px solid $Pink_underline;
+        }
+
+        .underline.pink:hover::after {
+            border-bottom: 9px solid $Soft_red;
+        }
+    }
+
+    .figure {
+        position: relative;
+        text-align: center;
+
+        .caption {
+            position: absolute;
+            bottom: 46px;
+            left: 50%;
+            transform: translate(-50%);
+            color: $Graphic_text;
+
+            &.design,
+            &.design h2 {
+                color: $Graphic_text;
+            }
+            
+            &.photo,
+            &.photo h2  {
+                color: $Photography_text;
+            }
+        }
+
+        h2 {
+            font-size: 2.05em;
+        }
+
+        p{
+            max-width: 350px;
+            font-size: 1rem;
+            line-height: 2em;;
+        }
+
+    }
+}
+
+#testimonies {
+    text-align: center;
+    padding: 142px 0 164px;
+
+    h2 {
+        font-family: $Fraunces;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $Grayish_blue3;
+        letter-spacing: 0.3em;
+    }
+}
+
+.columns {
+    width: 100vw;
+    display: grid;
+    grid-auto-flow: column;
+
+    img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #services {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        text-align: center;
+
+        .egg {
+            order:-1;
+        }
+
+        .text {
+            vertical-align: middle;
+
+            &.left,
+            &.right {
+                margin: 64px 7% 68px;
+            }
+    
+            h2 {
+                font-size: 2.4em;
+                line-height: 1.19em;
+                margin: 0 0 23px;
+            }
+    
+            p {
+                padding-bottom: 1.2rem;
+            }
+        }
+        .figure {
+            position: relative;
+            text-align: center;
+    
+            .caption {
+                width: 100%;
+                bottom: 60px;
+            }
+
+            h2 {
+                margin-bottom: 31px;
+            }
+
+            p {
+                display: block;
+                margin: 0 auto;
+                line-height: 1.65em;
+            }
+
+        }
+    }    
+
+    #testimonies {
+        padding: 52px 0 75px;
+    
+        h2 {
+            font-size: 1rem;
+        }
+    }   
+
+    .columns {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr;
+    }
+}

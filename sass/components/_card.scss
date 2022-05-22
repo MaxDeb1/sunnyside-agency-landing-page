@@ -1,0 +1,58 @@
+.cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    .card {
+        max-width: 355px;
+        padding-top: 67px;
+        
+        img {
+            aspect-ratio: 1 / 1;
+            width: 72px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1.29em;
+            color: $Grayish_blue1;
+            line-height: 1.77em;
+            padding-top: 41px;
+        }
+
+        .name {
+            font-family: $Fraunces;
+            font-size: 1.4em;
+            padding: 53px 0 14px;
+            color: $Very_Dark_Blue;
+        }
+
+        span {
+            color: $Grayish_blue3;       
+        }
+    }
+
+    @media (max-width: 900px) {
+        display: block;
+
+        .card {
+            margin: 0 auto;
+            padding: 52px 0 15px;
+
+            p {
+                margin: 33px 4% 0;
+                padding: 0;
+            }
+
+            .name {
+                padding: 34px 0 14px;
+            }
+        
+        }
+    }
+
+}
+

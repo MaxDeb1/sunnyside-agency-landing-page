@@ -1,0 +1,42 @@
+button,
+input {
+  font-size: 1em;
+  height: 56px;
+  width: 140px;
+  padding: auto;
+  text-transform: uppercase;
+  font-family: $Fraunces;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+button {
+    background: $White;
+    color:$Black;
+
+    &:hover {
+        background: $Button_hover;
+        color: $White;
+      }
+}
+
+@media (max-width: 800px) {
+  button {
+    font-size: 1.1em;
+    background: $Yellow;
+    color: $Graphic_text;
+    margin: 32px auto 0;
+
+    &:hover {
+        background: $Footer;
+        color: $White;
+      }
+}
+
+}

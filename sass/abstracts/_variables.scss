@@ -1,0 +1,45 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; 
+*/
+
+
+// Font Variables
+$Barlow: 'Barlow', sans-serif;
+$Fraunces: 'Fraunces', serif; 
+
+
+///Colors
+$Very_Dark_Blue: hsl(229, 57%, 11%);
+$Pink_underline: hsl(11.2, 80.3%, 88%);
+$Yellow_underline: #FDF0B5;
+
+// ### Primary
+
+$Soft_red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Graphic_text: hsl(167, 40%, 24%);
+$Photography_text: hsl(198, 62%, 26%);
+$Footer: hsl(167, 44%, 70%);
+$Footer_text: hsl(167, 49%, 30%);
+$Button_hover: hsl(199.9, 100%, 71.6%);
+
+// ### Neutral
+
+$Dark_blue: hsl(212, 27%, 19%);
+$Grayish_blue1: hsl(213, 9%, 39%);
+$Grayish_blue2: hsl(232, 10%, 55%);
+$Grayish_blue3: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+$Black: #000;
+
+
+/// Responsive Font-Size
+html {
+  --res: calc(0.01 * 10vmin);
+}
+//How to use it : font-size: calc(64 * vart(--res));
